@@ -1,11 +1,9 @@
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/rbicelli)
-
 # pfSense Zabbix Template
 
 This is a pfSense active template for Zabbix, based on Standard Agent and a php script using pfSense functions library for monitoring specific data.
 
 
-Tested with pfSense 2.5.x, Zabbix 4.0, Zabbix 5.0
+Tested with pfSense 2.5.x, 2.6.0, Zabbix 4.0, Zabbix 5.0
 
 ## What it does
 
@@ -43,7 +41,7 @@ First copy the file pfsense_zbx.php to your pfsense box (e.g. to /root/scripts).
 From **Diagnostics/Command Prompt** input this one-liner:
 
 ```bash
-curl --create-dirs -o /root/scripts/pfsense_zbx.php https://raw.githubusercontent.com/rbicelli/pfsense-zabbix-template/master/pfsense_zbx.php
+curl --create-dirs -o /root/scripts/pfsense_zbx.php https://raw.githubusercontent.com/SerpentariusSoftware/pfsense-zabbix-template/master/pfsense_zbx.php
 ```
 
 Then install package "Zabbix Agent 4" on your pfSense Box
@@ -113,3 +111,6 @@ Speedtest template creates a cron job and check for entry everytime Zabbix reque
 ## Credits
 
 [Keenton Zabbix Template](https://github.com/keentonsas/zabbix-template-pfsense) for Zabbix Agent freeBSD part.
+
+[SchiffelIT Zabbix Template](https://github.com/SchiffelIT/pfsense-zabbix-template) for the basic script.
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/rbicelli)
